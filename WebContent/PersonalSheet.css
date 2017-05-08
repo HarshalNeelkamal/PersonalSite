@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Anton', sans-serif;
+}
+
+#nameHolder1{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+    bottom: 50vh;
+    transform: translateY(0vh);
+    animation-name: shiftName;
+    animation-duration:3.5s;
+}
+
+@keyframes shiftName{
+	    0% {transform: translateY(50vh);}
+    	40% {transform: translateY(-10vh);}
+    	60% {transform: translateY(0vh);}
+    	80% {transform:	rotate(0deg);}
+    	100% {transform: rotate(360deg);}
+}
+
+#nameHolder2{
+	position: absolute;
+	top: 50vh;
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+    transform: translatex(-100vw);
+    animation-name: shiftNickName;
+    animation-duration:10s;
+}
+
+@keyframes shiftNickName{
+	    0% {transform: translateX(100vw);}
+	   	35% {transform: translateX(100vw);}
+    	55% {transform: translateX(0vw);}
+    	80% {transform: translateX(0vw);}
+    	100% {transform: translateX(-100vw);}
+}
+
+#introductory{
+	background-image: url("imageRepository/introductoryBackground.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+    backface-visibility: hidden;
+    }
